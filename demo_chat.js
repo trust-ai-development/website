@@ -27,7 +27,7 @@ async function sendRequest(message, key) {
         body: jsonStr
     });
     const data = await response.json();
-    return data.choices[0].message;
+    return data.choices[0].message["content"];
 }
 
 // Function to handle enter key and button click
