@@ -16,8 +16,8 @@ async function sendRequest(message, key) {
         "content": message
       }
     ];
-    let data = {"model":"gpt-3.5-turbo", "messages":dialogue, "n":1, "temperature":0.7}
-    let jsonStr = JSON.stringify(data);
+    let sendJson = {"model":"gpt-3.5-turbo", "messages":dialogue, "n":1, "temperature":0.7}
+    let jsonStr = JSON.stringify(sendJson);
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: 'POST',
         headers: {
