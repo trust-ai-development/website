@@ -8,7 +8,7 @@ async function getReply() {
         "timeout": 0,
         "headers": {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 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"
+            "Authorization": ""
         },
         "data": JSON.stringify({
             "prompt": userInput,
