@@ -1,35 +1,36 @@
-body {
-        background-color: #F5F5DC;
-        color: #645452;
-        font-family: Arial, sans-serif;
-    }
-#user-input, #chat-log, #key-input {
-padding: 10px;
-box-sizing: border-box;
-font-size: 18px;
-margin-bottom: 10px;
-border-radius: 5px;
-border: 2px solid #645452;
-background-color: white;
+#m-body {
+    background-color: #F5F5DC;
+    color: #645452;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#user-input {
-width: 80%;
+#chat-log, #key-input, #send-button, #user-input{
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #645452;
+    background-color: white;
 }
 #chat-log, #key-input {
-width: 100%;
+	width: 80%;
+}
+#user-input {
+	width: 60%;
 }
 #chat-log {
-height: 300px;
+    height: 300px;
 }
 #send-button {
-padding: 10px 20px;
-font-size: 18px;
-background-color: #8B4513;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
+	width: 20%;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 #send-button:hover {
-background-color: #A0522D;
+    background-color: #A0522D;
 }
