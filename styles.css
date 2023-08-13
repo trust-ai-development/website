@@ -3,8 +3,7 @@ body {
         color: #645452;
         font-family: Arial, sans-serif;
     }
-#user-input, #chat-log {
-width: 100%;
+#user-input, #chat-log, #key-input {
 padding: 10px;
 box-sizing: border-box;
 font-size: 18px;
@@ -12,6 +11,12 @@ margin-bottom: 10px;
 border-radius: 5px;
 border: 2px solid #645452;
 background-color: white;
+}
+#user-input {
+width: 80%;
+}
+#chat-log, #key-input {
+width: 100%;
 }
 #chat-log {
 height: 300px;
